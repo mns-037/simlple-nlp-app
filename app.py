@@ -15,10 +15,8 @@ from sklearn.metrics import silhouette_score
 
 st.write("""
 # Klaster Anggota App
-Aplikasi ini merupakan implementasi sederhana machine learning. Pembuatan model berdasarkan data alasan masuk anggota pada tahun 2017 dan 2020. 
-Aplikasi akan memprediksi klaster yang cocok berdasarkan alasan masuk yang diberikan.
-
-
+Aplikasi ini merupakan implementasi sederhana _machine learning_. Pembuatan model berdasarkan data alasan masuk anggota pada tahun 2017 dan 2020. Berdasarkan model terdapat 10 klaster, yaitu: 'Belajar Usaha', `Belajar Berwirausaha`, `Belajar Keuangan`, `Belajar Interaksi dengan Orang`,`Belajar Bisnis`, `Menambah Pengalaman`, `Mengembangkan Jiwa Kewirausahaan`,`Belajar Terkait Koperasi`, `Tertarik Internal Kopma`, `Mencari Pengalaman`
+Aplikasi akan mengolah input berupa alasan yang diberikan untuk memprediksi klaster yang sesuai berdasarkan model yang telah diperoleh.
 """)
 
 stp_all = pickle.load(open('stopwords.pkl', 'rb'))
