@@ -63,7 +63,7 @@ with st.form('Form Alasan Masuk'):
 	st.markdown('### Silakan masukkan alasan kamu')
 	user_input = st.text_area(' ', ' ')
 	
-	submitted = st.form_submit_button('Cek Prediksi Cluster')	
+	submitted = st.form_submit_button('Prediksi Klaster')	
 	
 	if submitted:
 		sample_input = pd.DataFrame({'alasan': [user_input]})
@@ -85,5 +85,5 @@ with st.form('Form Alasan Masuk'):
 		sample_input['cluster'] = cluster
 		sample_input['cluster'] = sample_input['cluster'].replace(kat_cluster)
 		
-		st.markdown('#### Cluster Kamu:')
+		st.markdown('#### Klaster Kamu:')
 		st.info(sample_input.iloc[0]['cluster'])
