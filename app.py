@@ -15,7 +15,8 @@ from sklearn.metrics import silhouette_score
 
 st.write("""
 # Klaster Anggota App
-Aplikasi ini merupakan implementasi sederhana _machine learning_. Pembuatan model berdasarkan data alasan masuk anggota pada tahun 2017 dan 2020. Berdasarkan model terdapat 10 klaster, yaitu: 
+Aplikasi ini merupakan implementasi sederhana _machine learning_. Pembuatan model berdasarkan data alasan masuk anggota pada tahun 2017 dan 2020. Berdasarkan model terdapat 10 klaster, yaitu:  
+
 1. `Belajar Usaha`  
 2. `Belajar Berwirausaha`  
 3. `Belajar Keuangan`  
