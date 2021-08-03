@@ -52,14 +52,13 @@ kat_cluster = {0:'Belajar Usaha',
                9:'Mencari Pengalaman'}
 
 with st.form('Form Alasan Masuk'):
-	st.markdown('## Silakan masukkan alasan kamu')
+	st.markdown('### Silakan masukkan alasan kamu')
 	user_input = st.text_area(' ', ' ')
 	
 	submitted = st.form_submit_button('Cek Prediksi Cluster')	
 	
 	if submitted:
 		sample_input = pd.DataFrame({'alasan': [user_input]})
-		sample_input.iloc[0,:]
 
 		sample_input['alasan'] = sample_input['alasan'].apply(lambda x:bersihin_teks(x))
 		sample_input['alasan'] = sample_input['alasan'].apply(lambda x:remove_stopwords(x))
@@ -78,5 +77,5 @@ with st.form('Form Alasan Masuk'):
 		sample_input['cluster'] = cluster
 		sample_input['cluster'] = sample_input['cluster'].replace(kat_cluster)
 		
-		st.markdown('## Cluster Kamu:')
+		st.markdown('#### Cluster Kamu:')
 		st.info(sample_input.iloc[0]['cluster'])
