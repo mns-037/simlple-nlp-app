@@ -4,4 +4,3 @@ numpy==1.19.2
 scikit-learn==0.23.2
 nltk==3.6.2
 Sastrawi==1.0.1
-pickle==4.0
